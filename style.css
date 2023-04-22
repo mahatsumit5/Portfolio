@@ -1,0 +1,118 @@
+/* default section */
+* {
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+.flex {
+  display: flex;
+  gap: 1rem;
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+  /* border-style: dashed; */
+}
+/* Checkbox section */
+
+:root {
+  --color-white: white;
+  --color-blue: #2f80ed;
+  --color-dark: black;
+  --body-bg: #white;
+  --text-color: var(--color-dark);
+  --border-color: var(--color-dark);
+  /* for dark mode */
+
+  --dark-bg: var(--color-dark);
+  --dark-text-color: white;
+  --dark-border-color: white;
+}
+
+/* for dark mode */
+
+#darkMode {
+  position: absolute;
+  top: 7rem;
+  left: 2rem;
+  /* display: none; */
+}
+.dark-mode-toggle {
+  position: fixed;
+  top: 7rem;
+  left: 3rem;
+}
+.dark-mode-toggle:hover {
+  transform: scale(1.3);
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.wrapper {
+  background-color: var(--body-bg);
+  min-width: 100vh;
+  color: var(--text-color);
+}
+
+/* dark mode activation */
+
+#dark-mode:checked + .wrapper {
+  background: var(--color-blue);
+  min-height: 100vh;
+  color: var(--dark-text-color);
+}
+/* header section */
+header {
+  background-color: var(--color-dark);
+  box-shadow: 0 0 10px 5px rgba(5, 2, 21, 0.558);
+  position: sticky;
+  top: 0;
+  color: var(--color-white);
+}
+.header {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo > div:nth-child(1) h2 {
+  font-size: 1.8rem;
+}
+.logo {
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+.line {
+  font-size: 1rem;
+}
+
+.menu-icon,
+#check {
+  display: none;
+}
+
+.navigation {
+  list-style: none;
+}
+.navigation li a:hover {
+  color: var(--color-blue);
+  transition: all 0.5s;
+  transform: scale(1.5);
+}
+/* <!-- hero section --> */
+
+/* <!-- banner Section --> */
+/* <!-- Skills Section--> */
+/* <!-- projects section--> */
+/* <!-- about me --> */
+
+/* <!-- contact me --> */
+/* <!-- footer section --> */
