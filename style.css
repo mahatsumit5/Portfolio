@@ -1,4 +1,8 @@
 /* default section */
+
+html {
+  scroll-behavior: smooth;
+}
 * {
   box-sizing: border-box;
 }
@@ -94,6 +98,7 @@ header {
   position: sticky;
   top: 0;
   color: var(--color-white);
+  z-index: 1;
 }
 .header {
   justify-content: space-between;
@@ -154,8 +159,9 @@ header {
   /* overflow: hidden; */
   /* border-style: dashed; */
   border-radius: 20%;
+  background-attachment: fixed;
 }
-.hero > div:nth-child(2) img {
+img {
   width: 100%;
   height: 100%;
 }
@@ -326,8 +332,125 @@ H3 {
   height: 60%;
 }
 /* <!-- about me --> */
+/* <!-- about me --> */
+/* <!-- about me --> */
+/* <!-- about me --> */
+/* <!-- about me --> */
+/* <!-- about me --> */
 
+.about {
+  /* border-style: dashed; */
+  position: relative;
+  top: 35vh;
+  justify-content: flex-start;
+  align-items: center;
+  min-height: 50vh;
+  flex-direction: column;
+}
+
+.about > div {
+  padding: 2rem;
+  justify-content: space-around;
+  /* border-style: dashed; */
+  width: 80%;
+  min-height: 60vh;
+  border-radius: 20px;
+  background-color: var(--color-blue);
+}
+
+.about > .flex > .item2 {
+  /* border-style: dashed; */
+  width: 50%;
+  justify-content: center;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.about > .flex > .item1 {
+  /* border-style: dashed; */
+  width: 50%;
+  justify-content: center;
+
+  align-items: center;
+}
+
+.image-background {
+  height: 70%;
+  width: 70%;
+  background-color: rgb(85, 36, 210);
+  border-radius: 50%;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+ul {
+  list-style: none;
+}
 /* <!-- contact me --> */
+/* <!-- contact me --> */
+/* <!-- contact me --> */
+/* <!-- contact me --> */
+/* <!-- contact me --> */
+
+.contact {
+  /* border-style: dashed; */
+  position: relative;
+  top: 40vh;
+  min-height: 30vh;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 0 1rem 0;
+}
+
+.contact > .item1 {
+  color: #2f80ed;
+  gap: 5rem;
+  font-size: 3rem;
+}
+.contact > .item2 {
+  color: #2f80ed;
+  gap: 2rem;
+  font-size: 1.5rem;
+  /* border-style: dashed; */
+  border-radius: 50px;
+  padding: 0 1rem;
+  background-color: #2f80ed;
+  color: aliceblue;
+  align-items: center;
+}
+/* goup Button */
+
+.goup {
+  position: fixed;
+  bottom: 5rem;
+  right: 3rem;
+  height: 80px;
+  width: 80px;
+  background-color: var(--color-blue);
+  border-radius: 50%;
+
+  color: var(--color-white);
+  padding: 1.3rem 1.7rem;
+  font-size: 2rem;
+  animation: goup;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes goup {
+  from {
+    bottom: 3rem;
+  }
+  to {
+    bottom: 3.5rem;
+    color: black;
+  }
+}
+
 /* <!-- footer section --> */
 footer {
   position: relative;
