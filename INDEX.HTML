@@ -4,8 +4,6 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sumit Mahat Portfolio</title>
-    <link rel="stylesheet" href="./style.css" />
 
     <!-- google fonts -->
 
@@ -30,10 +28,13 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+
+    <title>Sumit Mahat Portfolio</title>
+    <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
     <input type="checkbox" id="darkMode" />
-    <div clas="wrapper">
+    <div class="wrapper">
       <!-- dark modebutton -->
 
       <label for="darkMode" class="dark-mode-toggle"
@@ -43,11 +44,11 @@
       <header>
         <div class="container flex header" id="header">
           <div class="logo flex container">
-            <div><h2>Sumit Mahat</h2></div>
-            <div class="line"><h2>Soft. Developer</h2></div>
+            <h2>Sumit Mahat</h2>
+            |
+            <h2>Soft. Developer</h2>
           </div>
           <div class="menu">
-            <input type="checkbox" id="check" />
             <label for="check" class="menu-icon"
               ><i class="fa-solid fa-bars"></i
             ></label>
@@ -59,15 +60,33 @@
               <li><a href="#contact">Contact</a></li>
             </ul>
           </div>
+          <input type="checkbox" id="check" />
+          <div class="side-bar">
+            <div>
+              <a href="#hero">Home</a>
+            </div>
+            <div>
+              <a href="#skills">Skills</a>
+            </div>
+            <div>
+              <a href="#projects">Projects</a>
+            </div>
+            <div>
+              <a href="#about">About</a>
+            </div>
+            <div>
+              <a href="#contact">Contact</a>
+            </div>
+          </div>
         </div>
       </header>
 
       <!-- hero section -->
-      <div class="hero" id="hero">
+      <div class="hero flex" id="hero">
         <div class="flex">
-          <div class="div1">
+          <div class="flex">
             <h1>Introduction</h1>
-            <hr />
+
             <p>
               Hi, I am Sumit Mahat and I am a graduate from Southern Cross
               University(2022). I am a Software Developer by profession and I am
@@ -75,15 +94,14 @@
               professional Software Developer. Also, I am attending professional
               Year Program at QIBA.
             </p>
+            <div>
+              <a href="./SUMIT_Mahat_Resume.docx" class="button" target="_blank"
+                >Download CV <i class="fa-solid fa-download"></i
+              ></a>
+            </div>
           </div>
-          <div class="div2">
-            <a href="./SUMIT_Mahat_Resume.docx" class="button" target="_blank"
-              >Download CV <i class="fa-solid fa-download"></i
-            ></a>
-          </div>
+          <div><img src="./sumit.png" /></div>
         </div>
-
-        <div><img src="./sumit.png" /></div>
       </div>
       <!-- banner Section -->
 
@@ -96,6 +114,9 @@
               <h3>Graduate</h3>
             </div>
           </div>
+          <!-- divider  -->
+          <div class="info-divider"></div>
+
           <div class="item flex">
             <span class="circle"><i class="fa-solid fa-trophy"></i></span>
             <div class="text">
@@ -103,6 +124,8 @@
               <h3>5++ PROJECTS</h3>
             </div>
           </div>
+          <!-- divider  -->
+          <div class="info-divider"></div>
           <div class="item flex">
             <span class="circle"><i class="fa-solid fa-trophy"></i></span>
             <div class="text">
@@ -234,25 +257,24 @@
           </div>
           <div class="item2 flex">
             <h1>Sumit Mahat</h1>
-            <h2>
-              Introduction
-              <hr />
-              <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Placeat nemo voluptates minus, dolorum temporibus corrupti
-                inventore error blanditiis magnam sed deserunt in unde excepturi
-                ipsa magni. Minima consectetur nihil eum voluptatum eaque?
-                Maiores ad architecto numquam reprehenderit amet porro,
-                distinctio nobis quam ducimus? Accusantium minus cum aspernatur
-                dolores possimus? Officiis.
-              </p>
-              <h1>Work Life Balance</h1>
-              <ul>
-                <li>Coding</li>
-                <li>Guitar</li>
-                <li>Music</li>
-              </ul>
-            </h2>
+            <h2>Introduction</h2>
+
+            <p>
+              Software Engineer Graduate dedicated to improving skills through
+              hands-on learning and development work. Proficient in mobile and
+              desktop development environments. Adept at using HTML5, JavaScript
+              and other programming languages to produce clean code.
+              Well-organized and collaborative team player with strong
+              communication and analytical abilities.
+            </p>
+            <h1>Sydney, Australia</h1>
+
+            <h1>Work Life Balance</h1>
+            <ul>
+              <li>Coding</li>
+              <li>Guitar</li>
+              <li>Music</li>
+            </ul>
           </div>
         </div>
       </div>
@@ -266,16 +288,36 @@
       <div class="contact flex" id="contact">
         <h1>Contact me</h1>
         <div class="item1 flex">
-          <div class="icons1"><i class="fa-brands fa-github"></i></div>
-          <div class="icons2"><i class="fa-brands fa-linkedin"></i></div>
-          <div class="icons3"><i class="fa-brands fa-instagram"></i></div>
-          <div class="icons4"><i class="fa-brands fa-instagram"></i></div>
-          <div class="icons5"><i class="fa-brands fa-telegram"></i></div>
+          <div class="icons1">
+            <a href="https://www.youtube.com" target="_blank"
+              ><i class="fa-brands fa-youtube"></i
+            ></a>
+          </div>
+          <div class="icons2">
+            <a href="https://www.linkedin.com" target="_blank"
+              ><i class="fa-brands fa-linkedin"></i
+            ></a>
+          </div>
+          <div class="icons3">
+            <a href="https://www.instagram.com" target="_blank"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+          </div>
+          <div class="icons4">
+            <a href="https://www.facebook.com" target="_blank"
+              ><i class="fa-brands fa-square-facebook"></i
+            ></a>
+          </div>
+          <div class="icons5">
+            <a href="https://www.telegram.com" target="_blank"
+              ><i class="fa-brands fa-telegram"></i
+            ></a>
+          </div>
         </div>
         <h1>OR</h1>
 
         <div class="item2 flex">
-          <a href="https://mahatsumit5@gmail.com" target="_blank">
+          <a href="mailto:mahatsumit5@gmail.com" target="_blank">
             <p>mahatsumit5@gmail.com</p></a
           >
 
@@ -283,7 +325,30 @@
         </div>
       </div>
       <!-- footer section -->
-      <footer>links</footer>
+      <footer>
+        <div class="div1 flex">
+          <div class="link1">
+            <h3>Social Links</h3>
+            <ol class="links">
+              <a> <li>Facebook</li></a>
+              <a><li>LinkedIn</li></a>
+              <a><li>Instagram</li></a>
+              <a><li>Telegram</li></a>
+            </ol>
+          </div>
+          <div class="link2">
+            <h3>Links</h3>
+            <ol>
+              <li><a href="#hero">Home</a></li>
+              <li><a href="#skills">Skills</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ol>
+          </div>
+        </div>
+        <div class="div2">Copyrights To Sumit Mahat</div>
+      </footer>
       <a href="#hero">
         <span class="goup"><i class="fa-solid fa-arrow-up"></i></span
       ></a>
