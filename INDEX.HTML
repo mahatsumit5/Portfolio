@@ -4,8 +4,6 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sumit Mahat Portfolio</title>
-    <link rel="stylesheet" href="./style.css" />
 
     <!-- google fonts -->
 
@@ -30,10 +28,13 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+
+    <title>Sumit Mahat Portfolio</title>
+    <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
     <input type="checkbox" id="darkMode" />
-    <div clas="wrapper">
+    <div class="wrapper">
       <!-- dark modebutton -->
 
       <label for="darkMode" class="dark-mode-toggle"
@@ -41,36 +42,316 @@
       ></label>
       <!-- heaeder section -->
       <header>
-        <div class="container flex header">
+        <div class="container flex header" id="header">
           <div class="logo flex container">
-            <div><h2>Sumit Mahat</h2></div>
-            <div class="line"><h2>Soft. Developer</h2></div>
+            <h2>Sumit Mahat</h2>
+            |
+            <h2>Soft. Developer</h2>
           </div>
           <div class="menu">
-            <input type="checkbox" id="check" />
             <label for="check" class="menu-icon"
               ><i class="fa-solid fa-bars"></i
             ></label>
             <ul class="navigation flex">
-              <li><a href="">Home Page</a></li>
-              <li><a href="">Skills</a></li>
-              <li><a href="">Projects</a></li>
-              <li><a href="">About</a></li>
-              <li><a href="">Contact</a></li>
+              <li><a href="#hero">Home</a></li>
+              <li><a href="#skills">Skills</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#contact">Contact</a></li>
             </ul>
+          </div>
+          <input type="checkbox" id="check" />
+          <div class="side-bar">
+            <div>
+              <a href="#hero">Home</a>
+            </div>
+            <div>
+              <a href="#skills">Skills</a>
+            </div>
+            <div>
+              <a href="#projects">Projects</a>
+            </div>
+            <div>
+              <a href="#about">About</a>
+            </div>
+            <div>
+              <a href="#contact">Contact</a>
+            </div>
           </div>
         </div>
       </header>
 
       <!-- hero section -->
-      <hero> </hero>
+      <div class="hero flex" id="hero">
+        <div class="flex">
+          <div class="flex">
+            <h1>Introduction</h1>
+
+            <p>
+              Hi, I am Sumit Mahat and I am a graduate from Southern Cross
+              University(2022). I am a Software Developer by profession and I am
+              currently enrolled at Dented Code undertaking JRP to be a
+              professional Software Developer. Also, I am attending professional
+              Year Program at QIBA.
+            </p>
+            <div>
+              <a href="./SUMIT_Mahat_Resume.docx" class="button" target="_blank"
+                >Download CV <i class="fa-solid fa-download"></i
+              ></a>
+            </div>
+          </div>
+          <div><img src="./sumit.png" /></div>
+        </div>
+      </div>
       <!-- banner Section -->
+
+      <div class="banner flex container" id="banner">
+        <div>
+          <div class="item flex">
+            <span class="circle"><i class="fa-solid fa-trophy"></i></span>
+            <div class="text">
+              <h2>IT</h2>
+              <h3>Graduate</h3>
+            </div>
+          </div>
+          <!-- divider  -->
+          <div class="info-divider"></div>
+
+          <div class="item flex">
+            <span class="circle"><i class="fa-solid fa-trophy"></i></span>
+            <div class="text">
+              <h2>PROJECTS</h2>
+              <h3>5++ PROJECTS</h3>
+            </div>
+          </div>
+          <!-- divider  -->
+          <div class="info-divider"></div>
+          <div class="item flex">
+            <span class="circle"><i class="fa-solid fa-trophy"></i></span>
+            <div class="text">
+              <h2>1Y</h2>
+              <h3>EXPERIENCE</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <!-- Skills Section-->
+
+      <div class="skills flex" id="skills">
+        <div class="flex">
+          <div class="item">
+            <i class="fa-brands fa-html5"></i>
+            <button class="button">HTML</button>
+          </div>
+          <div class="item">
+            <i class="fa-brands fa-css3-alt"></i
+            ><button class="button">CSS</button>
+          </div>
+          <div class="item">
+            <i class="fa-brands fa-react"></i
+            ><button class="button">REACT</button>
+          </div>
+          <div class="item">
+            <i class="fa-brands fa-java"></i
+            ><button class="button">JAVA</button>
+          </div>
+          <div class="item">
+            <i class="fa-solid fa-database"></i
+            ><button class="button">MONGO DB</button>
+          </div>
+          <div class="item">
+            <i class="fa-brands fa-github"></i
+            ><button class="button">GITHUB</button>
+          </div>
+        </div>
+      </div>
       <!-- projects section-->
+
+      <div class="projects flex" id="projects">
+        <h1>My Projects</h1>
+
+        <div class="flex">
+          <div class="item-1">
+            <img src="./1.png" />
+            <icon
+              ><i class="fa-brands fa-github"></i>
+              <i class="fa-brands fa-chrome"></i>
+            </icon>
+            <h3>Personal Portfolio</h3>
+            <p>April 22, 2023</p>
+          </div>
+          <div class="item-2">
+            <img src="./2.png" />
+            <icon
+              ><i class="fa-brands fa-github"></i>
+              <a href="https://www.iconicstudio.net/" target="_blank">
+                <i class="fa-brands fa-chrome"></i>
+              </a>
+            </icon>
+            <h3>Iconic Studio</h3>
+            <p>April 22, 2023</p>
+          </div>
+          <div class="item-3">
+            <img src="./3.png" />
+            <icon
+              ><i class="fa-brands fa-github"></i>
+              <i class="fa-brands fa-chrome"></i>
+            </icon>
+            <h3>Custome code Iconic</h3>
+            <p>April 22, 2023</p>
+          </div>
+          <div class="item-4">
+            <img src="./4.png" />
+            <icon
+              ><i class="fa-brands fa-github"></i>
+              <i class="fa-brands fa-chrome"></i>
+            </icon>
+            <h3>CV with wix</h3>
+            <p>April 22, 2023</p>
+          </div>
+          <div class="item-5">
+            <img src="./5.png" />
+            <icon
+              ><i class="fa-brands fa-github"></i>
+              <i class="fa-brands fa-chrome"></i>
+            </icon>
+            <h3>Parrallex</h3>
+            <p>April 22, 2023</p>
+          </div>
+          <div class="item-5">
+            <img src="./1.png" />
+            <icon
+              ><i class="fa-brands fa-github"></i>
+              <i class="fa-brands fa-chrome"></i>
+            </icon>
+            <h3>Personal Portfolio</h3>
+            <p>April 22, 2023</p>
+          </div>
+          <div class="item-5">
+            <img src="./1.png" />
+            <icon
+              ><i class="fa-brands fa-github"></i>
+              <i class="fa-brands fa-chrome"></i>
+            </icon>
+            <h3>Personal Portfolio</h3>
+            <p>April 22, 2023</p>
+          </div>
+          <div class="item-5">
+            <img src="./1.png" />
+            <icon
+              ><i class="fa-brands fa-github"></i>
+              <i class="fa-brands fa-chrome"></i>
+            </icon>
+            <h3>Personal Portfolio</h3>
+            <p>April 22, 2023</p>
+          </div>
+        </div>
+      </div>
       <!-- about me -->
+      <div class="about flex" id="about">
+        <h1>About Me</h1>
+        <div class="flex">
+          <div class="item1 flex">
+            <span class="image-background"><img src="./sumit.png" /></span>
+          </div>
+          <div class="item2 flex">
+            <h1>Sumit Mahat</h1>
+            <h2>Introduction</h2>
+
+            <p>
+              Software Engineer Graduate dedicated to improving skills through
+              hands-on learning and development work. Proficient in mobile and
+              desktop development environments. Adept at using HTML5, JavaScript
+              and other programming languages to produce clean code.
+              Well-organized and collaborative team player with strong
+              communication and analytical abilities.
+            </p>
+            <h1>Sydney, Australia</h1>
+
+            <h1>Work Life Balance</h1>
+            <ul>
+              <li>Coding</li>
+              <li>Guitar</li>
+              <li>Music</li>
+            </ul>
+          </div>
+        </div>
+      </div>
 
       <!-- contact me -->
-      <!-- footer  section -->
+      <!-- contact me -->
+      <!-- contact me -->
+      <!-- contact me -->
+      <!-- contact me -->
+
+      <div class="contact flex" id="contact">
+        <h1>Contact me</h1>
+        <div class="item1 flex">
+          <div class="icons1">
+            <a href="https://www.youtube.com" target="_blank"
+              ><i class="fa-brands fa-youtube"></i
+            ></a>
+          </div>
+          <div class="icons2">
+            <a href="https://www.linkedin.com" target="_blank"
+              ><i class="fa-brands fa-linkedin"></i
+            ></a>
+          </div>
+          <div class="icons3">
+            <a href="https://www.instagram.com" target="_blank"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+          </div>
+          <div class="icons4">
+            <a href="https://www.facebook.com" target="_blank"
+              ><i class="fa-brands fa-square-facebook"></i
+            ></a>
+          </div>
+          <div class="icons5">
+            <a href="https://www.telegram.com" target="_blank"
+              ><i class="fa-brands fa-telegram"></i
+            ></a>
+          </div>
+        </div>
+        <h1>OR</h1>
+
+        <div class="item2 flex">
+          <a href="mailto:mahatsumit5@gmail.com" target="_blank">
+            <p>mahatsumit5@gmail.com</p></a
+          >
+
+          <i class="fa-regular fa-envelope"></i>
+        </div>
+      </div>
+      <!-- footer section -->
+      <footer>
+        <div class="div1 flex">
+          <div class="link1">
+            <h3>Social Links</h3>
+            <ol class="links">
+              <a> <li>Facebook</li></a>
+              <a><li>LinkedIn</li></a>
+              <a><li>Instagram</li></a>
+              <a><li>Telegram</li></a>
+            </ol>
+          </div>
+          <div class="link2">
+            <h3>Links</h3>
+            <ol>
+              <li><a href="#hero">Home</a></li>
+              <li><a href="#skills">Skills</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ol>
+          </div>
+        </div>
+        <div class="div2">Copyrights To Sumit Mahat</div>
+      </footer>
+      <a href="#hero">
+        <span class="goup"><i class="fa-solid fa-arrow-up"></i></span
+      ></a>
     </div>
   </body>
 </html>
