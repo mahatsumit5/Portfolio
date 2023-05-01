@@ -31,8 +31,9 @@
 
     <title>Sumit Mahat Portfolio</title>
     <link rel="stylesheet" href="./style.css" />
+    <script src="script.js"></script>
   </head>
-  <body>
+  <body id="index" onLoad="myBody()">
     <input type="checkbox" id="darkMode" />
     <div class="wrapper">
       <!-- dark modebutton -->
@@ -48,10 +49,12 @@
             |
             <h2>Soft. Developer</h2>
           </div>
+
           <div class="menu">
-            <label for="check" class="menu-icon"
+            <label for="check" class="menu-icon" id="menu-icon"
               ><i class="fa-solid fa-bars"></i
             ></label>
+
             <ul class="navigation flex">
               <li><a href="#hero">Home</a></li>
               <li><a href="#skills">Skills</a></li>
@@ -60,23 +63,28 @@
               <li><a href="#contact">Contact</a></li>
             </ul>
           </div>
-          <input type="checkbox" id="check" />
-          <div class="side-bar">
-            <div>
-              <a href="#hero">Home</a>
-            </div>
-            <div>
-              <a href="#skills">Skills</a>
-            </div>
-            <div>
-              <a href="#projects">Projects</a>
-            </div>
-            <div>
-              <a href="#about">About</a>
-            </div>
-            <div>
-              <a href="#contact">Contact</a>
-            </div>
+          <input type="checkbox" id="check" onclick="onClicked()" />
+          <div class="side-bar" id="side-bar">
+            <button id="button" onclick="Clicked()">
+              <a href="#hero" id="clicked"></a>
+              Home
+            </button>
+
+            <button id="button" onclick="Clicked()">
+              <a href="#skills" id="clicked">Skills</a>
+            </button>
+
+            <button id="button" onclick="Clicked()">
+              <a href="#projects" id="clicked">Projects</a>
+            </button>
+
+            <button id="button" onclick="Clicked()">
+              <a href="#about" id="clicked">About</a>
+            </button>
+
+            <button id="button" onclick="Clicked()">
+              <a href="#contact" id="clicked">Contact</a>
+            </button>
           </div>
         </div>
       </header>
@@ -86,7 +94,7 @@
         <div class="flex">
           <div class="flex">
             <h1>Introduction</h1>
-
+            <p id="p2"></p>
             <p>
               Hi, I am Sumit Mahat and I am a graduate from Southern Cross
               University(2022). I am a Software Developer by profession and I am
@@ -324,6 +332,15 @@
 
           <i class="fa-regular fa-envelope"></i>
         </div>
+        <form action="submit-form.php" method="get">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required />
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" required></textarea>
+          <input type="submit" value="Send" />
+        </form>
       </div>
       <!-- footer section -->
       <footer>
