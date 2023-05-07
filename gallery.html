@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- google fonts -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;400;600;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap"
+      rel="stylesheet"
+    />
+    <!-- font awesome cdn -->
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <title>Gallery</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="script.js"></script>
+  </head>
+  <body id="index">
+    <input type="checkbox" id="darkMode" />
+    <div class="wrapper">
+      <!-- dark modebutton -->
+
+      <label for="darkMode" class="dark-mode-toggle"
+        ><i class="fa-solid fa-circle-half-stroke"></i
+      ></label>
+      <!-- heaeder section -->
+      <header>
+        <div class="container flex header" id="header">
+          <div class="logo flex container">
+            <h1>Sumit Mahat</h1>
+            |
+            <h1>Soft. Developer</h1>
+          </div>
+
+          <div class="menu">
+            <label for="check" class="menu-icon" id="menu-icon"
+              ><i class="fa-solid fa-bars"></i
+            ></label>
+
+            <ul class="navigation flex">
+              <li><a href="INDEX.HTML">Home</a></li>
+              <li><a href="#skills">Skills</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#contact">Contact</a></li>
+              <li><a href="gallery.html" target="_self">Gallery</a></li>
+            </ul>
+          </div>
+          <input type="checkbox" id="check" onkeydown="onClicked()" />
+          <div class="side-bar" id="side-bar">
+            <button id="button" onclick="Clicked()">
+              <a href="#hero" id="clicked"></a>
+              Home
+            </button>
+
+            <button id="button" onclick="Clicked()">
+              <a href="#skills" id="clicked">Skills</a>
+            </button>
+
+            <button id="button" onclick="Clicked()">
+              <a href="#projects" id="clicked">Projects</a>
+            </button>
+
+            <button id="button" onclick="Clicked()">
+              <a href="#about" id="clicked">About</a>
+            </button>
+
+            <button id="button" onclick="Clicked()">
+              <a href="#contact" id="clicked">Contact</a>
+            </button>
+          </div>
+        </div>
+      </header>
+
+      <div class="box">
+        <div class="img1"><img src="./gallery/background.jpg" /></div>
+        <div class="img2"><img src="./gallery/bird.JPG" /></div>
+        <div class="img3"><img src="./gallery/bluemountain.jpg" /></div>
+        <div class="img4"><img src="./gallery/bondi.jpg" /></div>
+        <div class="img5"><img src="./gallery/byron.jpg" /></div>
+        <div class="img6"><img src="./gallery/coggee.jpg" /></div>
+        <div class="img"><img src="./gallery/mountain2.jpg" /></div>
+
+        <div class="img7"><img src="./gallery/crown.jpg" /></div>
+        <div class="img8"><img src="./gallery/flower.JPG" /></div>
+        <div class="img9"><img src="./gallery/kangaroo.jpg" /></div>
+        <div class="img10"><img src="./gallery/koala.JPG" /></div>
+        <div class="img15"><img src="./gallery/mountain.jpg" /></div>
+        <div class="img11"><img src="./gallery/lighthouse.JPG" /></div>
+        <div class="img12"><img src="./gallery/lighthouse1.JPG" /></div>
+        <div class="img13"><img src="./gallery/lighthouse4.jpg" /></div>
+        <div class="img"><img src="./gallery/opera.jpg" /></div>
+        <div class="img"><img src="./gallery/qvb.jpg" /></div>
+        <div class="img"><img src="./gallery/seacliff.jpg" /></div>
+        <div class="img"><img src="./gallery/sydney-harbour.jpg" /></div>
+        <div class="img"><img src="./gallery/townhall.jpg" /></div>
+
+        <div class="img14"><img src="./gallery/manly.jpg" /></div>
+      </div>
+      <!-- footer section -->
+      <footer>
+        <div class="div1 flex">
+          <div class="link1">
+            <h3>Social Links</h3>
+            <ol class="links">
+              <a> <li>Facebook</li></a>
+              <a><li>LinkedIn</li></a>
+              <a><li>Instagram</li></a>
+              <a><li>Telegram</li></a>
+            </ol>
+          </div>
+          <div class="link2">
+            <h3>Links</h3>
+            <ol>
+              <li><a href="#hero">Home</a></li>
+              <li><a href="#skills">Skills</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ol>
+          </div>
+        </div>
+        <div class="div2">Copyrights To Sumit Mahat</div>
+      </footer>
+      <a href="#hero">
+        <span class="goup"><i class="fa-solid fa-arrow-up"></i></span
+      ></a>
+    </div>
+  </body>
+</html>

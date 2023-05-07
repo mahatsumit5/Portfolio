@@ -36,6 +36,24 @@
   <body id="index" onLoad="myBody()">
     <input type="checkbox" id="darkMode" />
     <div class="wrapper">
+      <section>
+        <video autoplay muted loop id="myVideo">
+          <source src="video4.mp4" type="video/mp4" />
+          Your browser d oes not support HTML5 video.
+        </video>
+        <div>
+          <h1>Sumit Mahat</h1>
+
+          <h3>Professional Software and Website Developer</h3>
+          <p>
+            Hello,my name is Sumit Mahat,nice to meet you and i would like to
+            welcome you to my personal portfolio.
+          </p>
+          <hr />
+          <button class="button2">Hire me</button>
+        </div>
+      </section>
+
       <!-- dark modebutton -->
 
       <label for="darkMode" class="dark-mode-toggle"
@@ -45,9 +63,9 @@
       <header>
         <div class="container flex header" id="header">
           <div class="logo flex container">
-            <h2>Sumit Mahat</h2>
+            <h1>Sumit Mahat</h1>
             |
-            <h2>Soft. Developer</h2>
+            <h1>Soft. Developer</h1>
           </div>
 
           <div class="menu">
@@ -61,29 +79,38 @@
               <li><a href="#projects">Projects</a></li>
               <li><a href="#about">About</a></li>
               <li><a href="#contact">Contact</a></li>
+              <li><a href="gallery.html" target="_self">Gallery</a></li>
             </ul>
           </div>
           <input type="checkbox" id="check" onclick="onClicked()" />
           <div class="side-bar" id="side-bar">
-            <button id="button" onclick="Clicked()">
-              <a href="#hero" id="clicked"></a>
+            <button id="button" onclick="toggleMenu()">
+              <a href="#hero" style="animation-delay: 0.2s" id="clicked"></a>
               Home
             </button>
 
             <button id="button" onclick="Clicked()">
-              <a href="#skills" id="clicked">Skills</a>
+              <a href="#skills" style="animation-delay: 0.2s" id="clicked"
+                >Skills</a
+              >
             </button>
 
             <button id="button" onclick="Clicked()">
-              <a href="#projects" id="clicked">Projects</a>
+              <a href="#projects" style="animation-delay: 0.2s" id="clicked"
+                >Projects</a
+              >
             </button>
 
             <button id="button" onclick="Clicked()">
-              <a href="#about" id="clicked">About</a>
+              <a href="#about" style="animation-delay: 0.2s" id="clicked"
+                >About</a
+              >
             </button>
 
             <button id="button" onclick="Clicked()">
-              <a href="#contact" id="clicked">Contact</a>
+              <a href="#contact" style="animation-delay: 0.2s" id="clicked"
+                >Contact</a
+              >
             </button>
           </div>
         </div>
@@ -93,25 +120,38 @@
       <div class="hero flex" id="hero">
         <div class="flex">
           <div class="flex">
-            <h1>Introduction</h1>
-            <p id="p2"></p>
-            <p>Hello
-              Hi, I am Sumit Mahat and I am a graduate from Southern Cross
+            <h1>HI, I'M SUMIT MAHAT</h1>
+            <h2>Website and Software Developer</h2>
+
+            <p>
+              Hello Hi, I am Sumit Mahat and I am a graduate from Southern Cross
               University(2022). I am a Software Developer by profession and I am
               currently enrolled at Dented Code undertaking JRP to be a
               professional Software Developer. Also, I am attending professional
-              Year Program at QIBA. 
-              <hr>
-              I am professional in using HTML, CSS, JavaScript, BoostTrap and familiar with
-              Angular.JS nd Node.Js. 
+              Year Program at QIBA. Lorem ipsum dolor sit amet consectetur
+              adipisicing elit. Blanditiis laboriosam neque eum illo architecto
+              maiores velit aliquam, impedit incidunt ea, animi sapiente.
+              Recusandae ad quam ratione nisi! Quae totam officia eum
+              necessitatibus fuga sint rerum eos. Nihil excepturi repudiandae
+              consectetur iusto eveniet dolorum iste amet, autem enim asperiores
+              dicta optio! I am professional in using HTML, CSS, JavaScript,
+              BoostTrap and familiar with Angular.JS nd Node.Js. Lorem ipsum
+              dolor, sit amet consectetur adipisicing elit. Quos pariatur
+              asperiores optio similique aperiam in? Ipsam, vitae expedita enim
+              dolorem eligendi corporis numquam deserunt maxime et. Nemo vitae
+              recusandae error.
             </p>
-            <div>
-              <a href="./SUMIT_Mahat_Resume.docx" class="button" target="_blank"
+            <div class="flex">
+              <a
+                href="./SUMIT_Mahat_Resume.docx"
+                class="button2"
+                target="_blank"
                 >Download CV <i class="fa-solid fa-download"></i
               ></a>
+              <button class="button2">Hire ME</button>
             </div>
           </div>
-          <div><img src="./sumit.png" /></div>
+          <div><img src="./mypic.png" /></div>
         </div>
       </div>
       <!-- banner Section -->
@@ -184,79 +224,114 @@
         <h1>My Projects</h1>
 
         <div class="flex">
-          <div class="item-1">
-            <img src="./1.png" />
-            <icon
-              ><i class="fa-brands fa-github"></i>
-              <i class="fa-brands fa-chrome"></i>
-            </icon>
-            <h3>Personal Portfolio</h3>
-            <p>April 22, 2023</p>
+          <div class="box">
+            <div class="card">
+              <div class="front"><img src="./1.png" /></div>
+              <div class="back">
+                <icon
+                  ><i class="fa-brands fa-github"></i>
+                  <i class="fa-brands fa-chrome"></i>
+                </icon>
+                <h3>Personal Portfolio</h3>
+                <p>April 22, 2023</p>
+              </div>
+            </div>
           </div>
-          <div class="item-2">
-            <img src="./2.png" />
-            <icon
-              ><i class="fa-brands fa-github"></i>
-              <a href="https://www.iconicstudio.net/" target="_blank">
-                <i class="fa-brands fa-chrome"></i>
-              </a>
-            </icon>
-            <h3>Iconic Studio</h3>
-            <p>April 22, 2023</p>
+          <div class="box">
+            <div class="card">
+              <div class="front"><img src="./2.png" /></div>
+              <div class="back">
+                <icon
+                  ><i class="fa-brands fa-github"></i>
+                  <a href="https://www.iconicstudio.net/" target="_blank">
+                    <i class="fa-brands fa-chrome"></i>
+                  </a>
+                </icon>
+                <h3>Iconic Studio</h3>
+                <p>April 22, 2023</p>
+              </div>
+            </div>
           </div>
-          <div class="item-3">
-            <img src="./3.png" />
-            <icon
-              ><i class="fa-brands fa-github"></i>
-              <i class="fa-brands fa-chrome"></i>
-            </icon>
-            <h3>Custome code Iconic</h3>
-            <p>April 22, 2023</p>
+          <div class="box">
+            <div class="card">
+              <div class="front"><img src="./3.png" /></div>
+              <div class="back">
+                <icon
+                  ><i class="fa-brands fa-github"></i>
+                  <i class="fa-brands fa-chrome"></i>
+                </icon>
+                <h3>Custome code Iconic</h3>
+                <p>April 22, 2023</p>
+              </div>
+            </div>
           </div>
-          <div class="item-4">
-            <img src="./4.png" />
-            <icon
-              ><i class="fa-brands fa-github"></i>
-              <i class="fa-brands fa-chrome"></i>
-            </icon>
-            <h3>CV with wix</h3>
-            <p>April 22, 2023</p>
+
+          <div class="box">
+            <div class="card">
+              <div class="front"><img src="./4.png" /></div>
+              <div class="back">
+                <icon
+                  ><i class="fa-brands fa-github"></i>
+                  <i class="fa-brands fa-chrome"></i>
+                </icon>
+                <h3>CV with wix</h3>
+                <p>April 22, 2023</p>
+              </div>
+            </div>
           </div>
-          <div class="item-5">
-            <img src="./5.png" />
-            <icon
-              ><i class="fa-brands fa-github"></i>
-              <i class="fa-brands fa-chrome"></i>
-            </icon>
-            <h3>Parrallex</h3>
-            <p>April 22, 2023</p>
+          <div class="box">
+            <div class="card">
+              <div class="front"><img src="./5.png" /></div>
+              <div class="back">
+                <icon
+                  ><i class="fa-brands fa-github"></i>
+                  <i class="fa-brands fa-chrome"></i>
+                </icon>
+                <h3>Parrallex</h3>
+                <p>April 22, 2023</p>
+              </div>
+            </div>
           </div>
-          <div class="item-5">
-            <img src="./1.png" />
-            <icon
-              ><i class="fa-brands fa-github"></i>
-              <i class="fa-brands fa-chrome"></i>
-            </icon>
-            <h3>Personal Portfolio</h3>
-            <p>April 22, 2023</p>
+          <div class="box">
+            <div class="card">
+              <div class="front"><img src="./1.png" /></div>
+              <div class="back">
+                <icon
+                  ><i class="fa-brands fa-github"></i>
+                  <i class="fa-brands fa-chrome"></i>
+                </icon>
+                <h2>Personal Portfolio</h2>
+                <p>April 23,2023</p>
+              </div>
+            </div>
           </div>
-          <div class="item-5">
-            <img src="./1.png" />
-            <icon
-              ><i class="fa-brands fa-github"></i>
-              <i class="fa-brands fa-chrome"></i>
-            </icon>
-            <h3>Personal Portfolio</h3>
-            <p>April 22, 2023</p>
+
+          <div class="box">
+            <div class="card">
+              <div class="front"><img src="./1.png" /></div>
+              <div class="back">
+                <icon
+                  ><i class="fa-brands fa-github"></i>
+                  <i class="fa-brands fa-chrome"></i>
+                </icon>
+                <h3>Personal Portfolio</h3>
+                <p>April 22, 2023</p>
+              </div>
+            </div>
           </div>
-          <div class="item-5">
-            <img src="./1.png" />
-            <icon
-              ><i class="fa-brands fa-github"></i>
-              <i class="fa-brands fa-chrome"></i>
-            </icon>
-            <h3>Personal Portfolio</h3>
-            <p>April 22, 2023</p>
+
+          <div class="box">
+            <div class="card">
+              <div class="front"><img src="./1.png" /></div>
+              <div class="back">
+                <icon
+                  ><i class="fa-brands fa-github"></i>
+                  <i class="fa-brands fa-chrome"></i>
+                </icon>
+                <h3>Personal Portfolio</h3>
+                <p>April 22, 2023</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -264,12 +339,10 @@
       <div class="about flex" id="about">
         <h1>About Me</h1>
         <div class="flex">
-          <div class="item1 flex">
-            <span class="image-background"><img src="./sumit.png" /></span>
-          </div>
+          <div class="item1 flex"><img src="./mypic.png" /></div>
           <div class="item2 flex">
             <h1>Sumit Mahat</h1>
-            <h2>Introduction</h2>
+            <h2>Professional Summary</h2>
 
             <p>
               Software Engineer Graduate dedicated to improving skills through
@@ -277,7 +350,9 @@
               desktop development environments. Adept at using HTML5, JavaScript
               and other programming languages to produce clean code.
               Well-organized and collaborative team player with strong
-              communication and analytical abilities.
+              communication and analytical abilities. Lorem ipsum dolor sit amet
+              consectetur adipisicing elit. Impedit voluptate ab deserunt quidem
+              necessitatibus beatae dicta nulla iusto facilis aperiam!
             </p>
             <h1>Sydney, Australia</h1>
 
@@ -301,6 +376,7 @@
         <h1>Contact me</h1>
         <div class="item1 flex">
           <div class="icons1">
+            <p>YOUTUBE</p>
             <a href="https://www.youtube.com" target="_blank"
               ><i class="fa-brands fa-youtube"></i
             ></a>
@@ -330,7 +406,7 @@
 
         <div class="item2 flex">
           <a href="mailto:mahatsumit5@gmail.com" target="_blank">
-            <p>mahatsumit5@gmail.com</p></a
+            mahatsumit5@gmail.com</a
           >
 
           <i class="fa-regular fa-envelope"></i>

@@ -12,7 +12,7 @@ function myPolicy() {
   }
   document.getElementById("p2").innerHTML = txt;
 }
-
+const toggleMenu = () => document.body.classList.toggle("open");
 // function to hide side menu bar when clicked
 
 function onClicked() {
